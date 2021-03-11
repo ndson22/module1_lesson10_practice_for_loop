@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice_use_foor_loop</title>
+</head>
+<body>
+<!--Bai 1-->
+    <p id="text1"></p>
+
+<!--Bai 2-->
+   <p id="sum"></p>
+<script>
+// Bai 1
+    for(let i=0;i<5;i++){
+        document.getElementById('text1').innerHTML += "The number is " + i + "<br>";
+    }
+
+// Bai 2
+    let num = prompt('Enter your number: ');
+    let result = null;
+    for (let i=1;i<=parseInt(num);i++)
+    {
+        result += i;
+    }
+    document.getElementById('sum').innerHTML = 'Tong cac so la: ' + result;
+</script>
+</body>
+</html>
